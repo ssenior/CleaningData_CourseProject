@@ -1,7 +1,7 @@
 # Data Science - Getting and Cleaning Data Course Project
 Data Science Getting and Cleaning Data Course project is to demonstrate the ability to collect, work with, and clean a data set.
 
-# Project Description
+## Project Description
 The goal is to prepare tidy data that can be used for later analysis. Required submission includes: 1) a tidy data set as described below, 2) a link to a Github repository with the script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that was performed to clean up the data called CodeBook.md. A README.md file should also be included in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
@@ -41,4 +41,3 @@ The run_analysis.R script is the control logic to ingest the data collected from
 #### Running the script
 * source the script into your R environment. `source('run_analysis.R')`
 * execute the script. `run_analysis()`
-
