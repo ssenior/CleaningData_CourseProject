@@ -23,7 +23,7 @@ run_analysis <- function() {
         stop("Can not locate Samsung dataset at './UCI HAR Dataset'. Download the data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
     }
     
-    #check to see if output directory exists; if it doesn't create it
+    # check to see if output directory exists; if it doesn't create it
     if (!file.exists("output")) {
         message("Output directory does not exist. Creating the directory...")
         dir.create("output")
@@ -112,6 +112,6 @@ load_data <- function(type, path_in = "UCI HAR Dataset", feature_cols) {
 save_output <- function (dataset, filename) {
     message(paste("Saving dataset", filename, "to output directory..."))
     filepath <- file.path("output", paste(filename,".csv", sep=""))
-    write.table(dataset, filepath, row.names = FALSE)
+    write.table(dataset, filepath, row.names = FALSE, sep = ",")
 }
 
