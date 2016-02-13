@@ -111,7 +111,7 @@ load_data <- function(type, path_in = "UCI HAR Dataset", feature_cols) {
 ###############################################################################
 save_output <- function (dataset, filename) {
     message(paste("Saving dataset", filename, "to output directory..."))
-    filepath <- file.path("output", paste(filename,".csv", sep=""))
-    write.table(dataset, filepath, row.names = FALSE, sep = ",")
+    filepath <- file.path("output", paste(filename,".txt", sep=""))
+    write.table(dataset, filepath, row.names = FALSE)
 }
 

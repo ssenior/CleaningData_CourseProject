@@ -29,9 +29,10 @@ The assumption is that the Samsung data has been downloaded and unzipped to the 
 #### Description
 The run_analysis.R script is the control logic to ingest the data collected from the accelerometers of the Samsung Galaxy S smartphone and process the data into a tidy dataset that represents the average of each mean and standard deviation variables for each measurement. The logic is as follows:
 
-* Verifies the "UCI HAR Dataset" folder exists in the working directory
-* Loads the reference datasets (activity_lables and features)
-* Loads the training and testing datasets (subject, Y and X files)
+* Verifies the "UCI HAR Dataset" directory exists in the working directory
+* Creates "output" directory if it does not exist
+* Loads the reference datasets (activity_labels and features)
+* Loads the training and testing datasets (subject, Y and X files) with column names assigned to the X_ based on features reference dataset
 * Merges the training and testing datasets into a combined dataset
 * Extracts the relevant mean and standard measurements
 * Encodes the activity column in the merged dataset as a factor
